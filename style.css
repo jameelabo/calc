@@ -38,6 +38,10 @@ margin: 10px;
 
 
 }
+.calculator form input:hover{
+  background-color: yellow;
+  color: blue;
+}
 
 form .display{
 display: flex;
@@ -90,7 +94,7 @@ form input.operator{
 
 @media (max-width: 480px) {
     .calculator form input {
-        width: 40px;
+        width: 45px;
         height: 40px;
         font-size: 16px;
  
@@ -100,4 +104,7 @@ form input.operator{
         font-size: 24px;
      
     }
+form input.equal{
+    width: 115px;
+}
 }
