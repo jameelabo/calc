@@ -69,8 +69,8 @@ form input.operator{
     .calculator form input{
         border: 0;
         outline: 0;
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        height: 60px;
         border-radius: 2px;
         box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
         background: transparent;
@@ -92,9 +92,43 @@ form input.operator{
 
     }
     form input.equal{
-        width: 70px;
+        width: 130px;
     }
     form input.operator{
         color: #33ffd8;
+    }
+
+    @media (max-width: 330px) {
+        .calculator form input{
+            border: 0;
+            outline: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 2px;
+            box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
+            background: transparent;
+        font-size: 10px;
+        color:#fff;
+        cursor: pointer;
+        margin: 4px;
+        
+        
+        
+        }
+        form .display input{
+            text-align: right;
+            flex: 1;
+            font-size: 40px;
+            box-shadow: none;
+        width: 60px;
+        font-size: 15px;
+    
+        }
+        form input.equal{
+            width: 90px;
+        }
+        form input.operator{
+            color: #33ffd8;
+        }
     }
 }
